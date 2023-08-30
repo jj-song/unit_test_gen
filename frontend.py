@@ -53,13 +53,15 @@ def main():
 
         if is_valid_csharp_method(content):
             if st.button("Generate Unit Tests"):
-                st.session_state.unit_tests = send_to_api(content, api_endpoint)
+                with st.spinner('Generating Unit Tests...'):
+                    st.session_state.unit_tests = send_to_api(content, api_endpoint)
                 # Save the result to a downloadable file
                 with open("generated_tests.cs", "w") as f:
                     f.write(st.session_state.unit_tests)
 
             if st.button("Critique Input Method"):
-                st.session_state.critique = critique_input_method(content)
+                with st.spinner('Critiquing Method...'):
+                    st.session_state.critique = critique_input_method(content)
 
             if "unit_tests" in st.session_state:
                 st.subheader("Generated NUnit Tests")
