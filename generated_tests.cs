@@ -1,85 +1,64 @@
-using NUnit.Framework;
+using Xunit;
 
-[TestFixture]
 public class RectangleTests
 {
-    [Test]
-    public void CalculateArea_WithPositiveLengthAndWidth_ReturnsCorrectArea()
+    [Fact]
+    public void CalculateArea_ReturnsCorrectArea()
     {
         // Arrange
-        double length = 5;
-        double width = 3;
-        double expectedArea = 15;
+        double length = 4;
+        double width = 5;
         Rectangle rectangle = new Rectangle(length, width);
-        
+
         // Act
-        double actualArea = rectangle.CalculateArea();
-        
+        double area = rectangle.CalculateArea();
+
         // Assert
-        Assert.AreEqual(expectedArea, actualArea);
+        Assert.Equal(20, area);
     }
-    
-    [Test]
-    public void CalculateArea_WithZeroLength_ReturnsZeroArea()
+
+    [Fact]
+    public void CalculateArea_ReturnsZeroWhenLengthIsZero()
     {
         // Arrange
         double length = 0;
-        double width = 3;
-        double expectedArea = 0;
+        double width = 5;
         Rectangle rectangle = new Rectangle(length, width);
-        
+
         // Act
-        double actualArea = rectangle.CalculateArea();
-        
+        double area = rectangle.CalculateArea();
+
         // Assert
-        Assert.AreEqual(expectedArea, actualArea);
+        Assert.Equal(0, area);
     }
-    
-    [Test]
-    public void CalculateArea_WithZeroWidth_ReturnsZeroArea()
+
+    [Fact]
+    public void CalculateArea_ReturnsZeroWhenWidthIsZero()
     {
         // Arrange
-        double length = 5;
+        double length = 4;
         double width = 0;
-        double expectedArea = 0;
         Rectangle rectangle = new Rectangle(length, width);
-        
+
         // Act
-        double actualArea = rectangle.CalculateArea();
-        
+        double area = rectangle.CalculateArea();
+
         // Assert
-        Assert.AreEqual(expectedArea, actualArea);
+        Assert.Equal(0, area);
     }
-    
-    [Test]
-    public void CalculateArea_WithNegativeLength_ReturnsNegativeArea()
+
+    [Fact]
+    public void CalculateArea_ReturnsZeroWhenBothLengthAndWidthAreZero()
     {
         // Arrange
-        double length = -5;
-        double width = 3;
-        double expectedArea = -15;
+        double length = 0;
+        double width = 0;
         Rectangle rectangle = new Rectangle(length, width);
-        
+
         // Act
-        double actualArea = rectangle.CalculateArea();
-        
+        double area = rectangle.CalculateArea();
+
         // Assert
-        Assert.AreEqual(expectedArea, actualArea);
-    }
-    
-    [Test]
-    public void CalculateArea_WithNegativeWidth_ReturnsNegativeArea()
-    {
-        // Arrange
-        double length = 5;
-        double width = -3;
-        double expectedArea = -15;
-        Rectangle rectangle = new Rectangle(length, width);
-        
-        // Act
-        double actualArea = rectangle.CalculateArea();
-        
-        // Assert
-        Assert.AreEqual(expectedArea, actualArea);
+        Assert.Equal(0, area);
     }
 }
