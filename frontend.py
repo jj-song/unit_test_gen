@@ -10,20 +10,17 @@ def is_valid_csharp_method(content):
 # Modularized function to interact with an API (in this case, ChatGPT)
 def send_to_api(content, endpoint):
     if endpoint == "ChatGPT":
-        prompt = f"Generate NUnit unit tests for the following C# method to maximize code coverage:\n{content}"
+        prompt = f"Please provide NUnit unit tests for the following C# method to maximize code coverage. Only return the code, no additional explanations:\n{content}"
         response = openai.ChatCompletion.create(
             model="gpt-3.5-turbo",
-            messages=[{"role": "user", "content": prompt},
-                      {"role": "system", "content": prompt}],
+            messages=[{"role": "user", "content": prompt}],
             temperature=0.7,
             max_tokens=3000
-            # n=1,
-            # stop=None
         )
         return response['choices'][0]['message']['content']
-        
-def critique_generated_tests(unit_tests):
-    prompt = f"Please critique the following NUnit tests and provide a score out of 10, along with suggestions for improvement:\n\n{unit_tests}. Response should only contain the contents of the unit test and nothing else. "
+
+def critique_input_method(content):
+    prompt = f"Please critique the following C# method and provide suggestions for improvement:\n\n{content}. Response should only contain the critique and suggestions."
     response = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
         messages=[
@@ -35,7 +32,6 @@ def critique_generated_tests(unit_tests):
     )
     return response['choices'][0]['message']['content']
 
-
 def main():
     st.title("Unit Test Generation Tool")
 
@@ -45,26 +41,35 @@ def main():
         openai.api_key = openai_key
 
     uploaded_file = st.file_uploader("Upload C# method (.cs file)", type=["cs"])
-    
+
     # API endpoint selection dropdown
     api_endpoint = st.selectbox("Select API Endpoint", ["ChatGPT", "OtherAPI"])  # Add other API names as required
 
     if uploaded_file:
         content = uploaded_file.read().decode()
+        # Display the uploaded C# method with syntax highlighting
+        st.subheader("Uploaded C# Method")
+        st.code(content, language='csharp')
+
         if is_valid_csharp_method(content):
             if st.button("Generate Unit Tests"):
-                unit_tests = send_to_api(content, api_endpoint)
-                st.text_area("Generated NUnit Tests", unit_tests, height=300)
+                st.session_state.unit_tests = send_to_api(content, api_endpoint)
                 # Save the result to a downloadable file
                 with open("generated_tests.cs", "w") as f:
-                    f.write(unit_tests)
-                st.download_button("Download Generated Tests", "generated_tests.cs", "text/plain")
-                if st.button("Critique Generated Tests"):
-                    critique = critique_generated_tests(unit_tests)
-                    score_pattern = re.search(r"score out of 10: (\d+)", critique)
-                    score = score_pattern.group(1) if score_pattern else "N/A"
-                    suggestions = critique.replace(score_pattern.group(0), "") if score_pattern else critique
-                    st.text_area(f"Score: {score}/10", suggestions, height=150)
+                    f.write(st.session_state.unit_tests)
+
+            if st.button("Critique Input Method"):
+                st.session_state.critique = critique_input_method(content)
+
+            if "unit_tests" in st.session_state:
+                st.subheader("Generated NUnit Tests")
+                st.code(st.session_state.unit_tests, language='csharp')
+                downloaded_file = open("generated_tests.cs", "r").read()
+                st.download_button("Download Generated Tests", data=downloaded_file, file_name="generated_tests.cs", mime="text/plain")
+
+            if "critique" in st.session_state:
+                st.subheader("Critique of Input Method")
+                st.text_area("Critique", st.session_state.critique, height=150)
         else:
             st.error("The uploaded file does not contain a valid C# method.")
 
