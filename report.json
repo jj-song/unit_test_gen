@@ -1,0 +1,3124 @@
+{
+    "total": 1116,
+    "p": 1,
+    "ps": 100,
+    "paging": {
+        "pageIndex": 1,
+        "pageSize": 100,
+        "total": 1116
+    },
+    "effortTotal": 3892,
+    "issues": [
+        {
+            "key": "AYfEdD3Dx6rd7t2T3qqv",
+            "rule": "python:S1720",
+            "severity": "MAJOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/add_videos.py",
+            "project": "DaveDaveFind",
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add a docstring to this module.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD3Dx6rd7t2T3qqw",
+            "rule": "python:S1720",
+            "severity": "MAJOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/add_videos.py",
+            "project": "DaveDaveFind",
+            "line": 5,
+            "hash": "4a3cf8839716b3540a96775832d77850",
+            "textRange": {
+                "startLine": 5,
+                "endLine": 5,
+                "startOffset": 4,
+                "endOffset": 16
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add a docstring to this function.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD3Dx6rd7t2T3qqt",
+            "rule": "python:S1131",
+            "severity": "MINOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/add_videos.py",
+            "project": "DaveDaveFind",
+            "line": 9,
+            "hash": "dc7566cbee7054fb9c52275377f23059",
+            "textRange": {
+                "startLine": 9,
+                "endLine": 9,
+                "startOffset": 0,
+                "endOffset": 31
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove the useless trailing whitespaces at the end of this line.",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD3Dx6rd7t2T3qq5",
+            "rule": "python:OneStatementPerLine",
+            "severity": "MAJOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/add_videos.py",
+            "project": "DaveDaveFind",
+            "line": 11,
+            "hash": "af6937e3fc293109f0c0ebb79ff83669",
+            "textRange": {
+                "startLine": 11,
+                "endLine": 11,
+                "startOffset": 0,
+                "endOffset": 65
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "At most one statement is allowed per line, but 2 statements were found on this line.",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD3Dx6rd7t2T3qqx",
+            "rule": "python:S1720",
+            "severity": "MAJOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/add_videos.py",
+            "project": "DaveDaveFind",
+            "line": 11,
+            "hash": "af6937e3fc293109f0c0ebb79ff83669",
+            "textRange": {
+                "startLine": 11,
+                "endLine": 11,
+                "startOffset": 4,
+                "endOffset": 18
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add a docstring to this function.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD3Dx6rd7t2T3qqy",
+            "rule": "python:S1542",
+            "severity": "MAJOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/add_videos.py",
+            "project": "DaveDaveFind",
+            "line": 11,
+            "hash": "af6937e3fc293109f0c0ebb79ff83669",
+            "textRange": {
+                "startLine": 11,
+                "endLine": 11,
+                "startOffset": 4,
+                "endOffset": 18
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Rename function \"removeNonAscii\" to match the regular expression ^[a-z_][a-z0-9_]*$.",
+            "effort": "10min",
+            "debt": "10min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD3Dx6rd7t2T3qqz",
+            "rule": "python:S1720",
+            "severity": "MAJOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/add_videos.py",
+            "project": "DaveDaveFind",
+            "line": 13,
+            "hash": "76295843a1cdbda8bf6dd1390449d573",
+            "textRange": {
+                "startLine": 13,
+                "endLine": 13,
+                "startOffset": 4,
+                "endOffset": 23
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add a docstring to this function.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD3Dx6rd7t2T3qq0",
+            "rule": "python:S117",
+            "severity": "MINOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/add_videos.py",
+            "project": "DaveDaveFind",
+            "line": 14,
+            "hash": "1879f6ee67ebfcd8c92c301bb4457fa7",
+            "textRange": {
+                "startLine": 14,
+                "endLine": 14,
+                "startOffset": 1,
+                "endOffset": 13
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Rename this local variable \"vindexReader\" to match the regular expression ^[_a-z][a-z0-9_]*$.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD3Dx6rd7t2T3qq1",
+            "rule": "python:S117",
+            "severity": "MINOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/add_videos.py",
+            "project": "DaveDaveFind",
+            "line": 15,
+            "hash": "6dbe9e6c7ae8741f374aab3dbbd80557",
+            "textRange": {
+                "startLine": 15,
+                "endLine": 15,
+                "startOffset": 1,
+                "endOffset": 12
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Rename this local variable \"vinfoWriter\" to match the regular expression ^[_a-z][a-z0-9_]*$.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD3Dx6rd7t2T3qqs",
+            "rule": "python:S134",
+            "severity": "CRITICAL",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/add_videos.py",
+            "project": "DaveDaveFind",
+            "line": 38,
+            "hash": "5bc53830b11fe29cf701c43b7f277e6f",
+            "textRange": {
+                "startLine": 38,
+                "endLine": 38,
+                "startOffset": 5,
+                "endOffset": 7
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/add_videos.py",
+                            "textRange": {
+                                "startLine": 34,
+                                "endLine": 34,
+                                "startOffset": 4,
+                                "endOffset": 7
+                            },
+                            "msg": "Nesting +1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/add_videos.py",
+                            "textRange": {
+                                "startLine": 31,
+                                "endLine": 31,
+                                "startOffset": 3,
+                                "endOffset": 6
+                            },
+                            "msg": "Nesting +1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/add_videos.py",
+                            "textRange": {
+                                "startLine": 18,
+                                "endLine": 18,
+                                "startOffset": 2,
+                                "endOffset": 5
+                            },
+                            "msg": "Nesting +1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/add_videos.py",
+                            "textRange": {
+                                "startLine": 17,
+                                "endLine": 17,
+                                "startOffset": 1,
+                                "endOffset": 4
+                            },
+                            "msg": "Nesting +1",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Refactor this code to not nest more than 4 \"if\", \"for\", \"while\", \"try\" and \"with\" statements.",
+            "effort": "10min",
+            "debt": "10min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "brain-overload"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD3Dx6rd7t2T3qqu",
+            "rule": "python:S1131",
+            "severity": "MINOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/add_videos.py",
+            "project": "DaveDaveFind",
+            "line": 40,
+            "textRange": {
+                "startLine": 40,
+                "endLine": 40,
+                "startOffset": 0,
+                "endOffset": 4
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove the useless trailing whitespaces at the end of this line.",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD3Dx6rd7t2T3qq2",
+            "rule": "python:S5754",
+            "severity": "CRITICAL",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/add_videos.py",
+            "project": "DaveDaveFind",
+            "line": 41,
+            "hash": "3e264f5fbab10735799511f21ca70842",
+            "textRange": {
+                "startLine": 41,
+                "endLine": 41,
+                "startOffset": 2,
+                "endOffset": 8
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Specify an exception class to catch or reraise the exception",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "bad-practice",
+                "error-handling",
+                "suspicious"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD3Dx6rd7t2T3qq4",
+            "rule": "python:PrintStatementUsage",
+            "severity": "MAJOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/add_videos.py",
+            "project": "DaveDaveFind",
+            "line": 43,
+            "hash": "10c9e30bbcb5e7b989d20ca9e3845b3f",
+            "textRange": {
+                "startLine": 43,
+                "endLine": 43,
+                "startOffset": 1,
+                "endOffset": 6
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace print statement by built-in function.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "obsolete",
+                "python3"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD31x6rd7t2T3qq_",
+            "rule": "python:S1720",
+            "severity": "MAJOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/doc_crawler.py",
+            "project": "DaveDaveFind",
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add a docstring to this module.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD31x6rd7t2T3qrA",
+            "rule": "python:S113",
+            "severity": "MINOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/doc_crawler.py",
+            "project": "DaveDaveFind",
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add a new line at the end of this file \"doc_crawler.py\".",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD31x6rd7t2T3qrB",
+            "rule": "python:S1720",
+            "severity": "MAJOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/doc_crawler.py",
+            "project": "DaveDaveFind",
+            "line": 5,
+            "hash": "de287f145d3d192473bc3f99143f382e",
+            "textRange": {
+                "startLine": 5,
+                "endLine": 5,
+                "startOffset": 4,
+                "endOffset": 22
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add a docstring to this function.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD31x6rd7t2T3qq6",
+            "rule": "python:S1131",
+            "severity": "MINOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/doc_crawler.py",
+            "project": "DaveDaveFind",
+            "line": 11,
+            "textRange": {
+                "startLine": 11,
+                "endLine": 11,
+                "startOffset": 0,
+                "endOffset": 1
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove the useless trailing whitespaces at the end of this line.",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD31x6rd7t2T3qq7",
+            "rule": "python:S1131",
+            "severity": "MINOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/doc_crawler.py",
+            "project": "DaveDaveFind",
+            "line": 14,
+            "textRange": {
+                "startLine": 14,
+                "endLine": 14,
+                "startOffset": 0,
+                "endOffset": 1
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove the useless trailing whitespaces at the end of this line.",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD31x6rd7t2T3qq8",
+            "rule": "python:S1131",
+            "severity": "MINOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/doc_crawler.py",
+            "project": "DaveDaveFind",
+            "line": 23,
+            "textRange": {
+                "startLine": 23,
+                "endLine": 23,
+                "startOffset": 0,
+                "endOffset": 1
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove the useless trailing whitespaces at the end of this line.",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD31x6rd7t2T3qrC",
+            "rule": "python:S1720",
+            "severity": "MAJOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/doc_crawler.py",
+            "project": "DaveDaveFind",
+            "line": 26,
+            "hash": "91a2da32cab3d0574ad7ea74eee2b1aa",
+            "textRange": {
+                "startLine": 26,
+                "endLine": 26,
+                "startOffset": 4,
+                "endOffset": 13
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add a docstring to this function.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD31x6rd7t2T3qrD",
+            "rule": "python:PrintStatementUsage",
+            "severity": "MAJOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/doc_crawler.py",
+            "project": "DaveDaveFind",
+            "line": 37,
+            "hash": "fe73f7abda14c6f9345f44c67b7d0c50",
+            "textRange": {
+                "startLine": 37,
+                "endLine": 37,
+                "startOffset": 2,
+                "endOffset": 7
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace print statement by built-in function.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "obsolete",
+                "python3"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD31x6rd7t2T3qq9",
+            "rule": "python:S1131",
+            "severity": "MINOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/doc_crawler.py",
+            "project": "DaveDaveFind",
+            "line": 42,
+            "textRange": {
+                "startLine": 42,
+                "endLine": 42,
+                "startOffset": 0,
+                "endOffset": 1
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove the useless trailing whitespaces at the end of this line.",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD31x6rd7t2T3qq-",
+            "rule": "python:S1131",
+            "severity": "MINOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/doc_crawler.py",
+            "project": "DaveDaveFind",
+            "line": 43,
+            "textRange": {
+                "startLine": 43,
+                "endLine": 43,
+                "startOffset": 0,
+                "endOffset": 1
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove the useless trailing whitespaces at the end of this line.",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD2mx6rd7t2T3qqU",
+            "rule": "python:S1720",
+            "severity": "MAJOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/index_pdfs.py",
+            "project": "DaveDaveFind",
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add a docstring to this module.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD2lx6rd7t2T3qqL",
+            "rule": "python:LineLength",
+            "severity": "MAJOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/index_pdfs.py",
+            "project": "DaveDaveFind",
+            "line": 7,
+            "hash": "ecaf3b6c58fd20ef3d896401d9dbae02",
+            "textRange": {
+                "startLine": 7,
+                "endLine": 7,
+                "startOffset": 0,
+                "endOffset": 181
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "The line contains 181 characters which is greater than 120 authorized.",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD2lx6rd7t2T3qqM",
+            "rule": "python:LineLength",
+            "severity": "MAJOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/index_pdfs.py",
+            "project": "DaveDaveFind",
+            "line": 8,
+            "hash": "a6b01577335481ac2be9575f570b3210",
+            "textRange": {
+                "startLine": 8,
+                "endLine": 8,
+                "startOffset": 0,
+                "endOffset": 192
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "The line contains 192 characters which is greater than 120 authorized.",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD2lx6rd7t2T3qqN",
+            "rule": "python:LineLength",
+            "severity": "MAJOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/index_pdfs.py",
+            "project": "DaveDaveFind",
+            "line": 9,
+            "hash": "bd55086abbfc218a435f3d6d1001e5e1",
+            "textRange": {
+                "startLine": 9,
+                "endLine": 9,
+                "startOffset": 0,
+                "endOffset": 170
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "The line contains 170 characters which is greater than 120 authorized.",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD2lx6rd7t2T3qqO",
+            "rule": "python:LineLength",
+            "severity": "MAJOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/index_pdfs.py",
+            "project": "DaveDaveFind",
+            "line": 10,
+            "hash": "dd560d5ff31b300035a5d7353c272492",
+            "textRange": {
+                "startLine": 10,
+                "endLine": 10,
+                "startOffset": 0,
+                "endOffset": 174
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "The line contains 174 characters which is greater than 120 authorized.",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD2lx6rd7t2T3qqP",
+            "rule": "python:LineLength",
+            "severity": "MAJOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/index_pdfs.py",
+            "project": "DaveDaveFind",
+            "line": 11,
+            "hash": "08cbf62afc34d75fbd2ac6b042251845",
+            "textRange": {
+                "startLine": 11,
+                "endLine": 11,
+                "startOffset": 0,
+                "endOffset": 174
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "The line contains 174 characters which is greater than 120 authorized.",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD2mx6rd7t2T3qqQ",
+            "rule": "python:LineLength",
+            "severity": "MAJOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/index_pdfs.py",
+            "project": "DaveDaveFind",
+            "line": 12,
+            "hash": "f552808db5993891d5cfa602eee0ab28",
+            "textRange": {
+                "startLine": 12,
+                "endLine": 12,
+                "startOffset": 0,
+                "endOffset": 174
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "The line contains 174 characters which is greater than 120 authorized.",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD2mx6rd7t2T3qqR",
+            "rule": "python:LineLength",
+            "severity": "MAJOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/index_pdfs.py",
+            "project": "DaveDaveFind",
+            "line": 13,
+            "hash": "b9f093f530356081b621128f0b2e5bfe",
+            "textRange": {
+                "startLine": 13,
+                "endLine": 13,
+                "startOffset": 0,
+                "endOffset": 174
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "The line contains 174 characters which is greater than 120 authorized.",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD2mx6rd7t2T3qqS",
+            "rule": "python:LineLength",
+            "severity": "MAJOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/index_pdfs.py",
+            "project": "DaveDaveFind",
+            "line": 14,
+            "hash": "480c647d755c8410cca16567732f25a6",
+            "textRange": {
+                "startLine": 14,
+                "endLine": 14,
+                "startOffset": 0,
+                "endOffset": 174
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "The line contains 174 characters which is greater than 120 authorized.",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD2mx6rd7t2T3qqT",
+            "rule": "python:LineLength",
+            "severity": "MAJOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/index_pdfs.py",
+            "project": "DaveDaveFind",
+            "line": 15,
+            "hash": "84cc2dc0c1feebf9ad098e16878b472a",
+            "textRange": {
+                "startLine": 15,
+                "endLine": 15,
+                "startOffset": 0,
+                "endOffset": 173
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "The line contains 173 characters which is greater than 120 authorized.",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD2mx6rd7t2T3qqe",
+            "rule": "python:S1720",
+            "severity": "MAJOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/index_pdfs.py",
+            "project": "DaveDaveFind",
+            "line": 18,
+            "hash": "8c26f722edefa99f2bcbd290ee989c1c",
+            "textRange": {
+                "startLine": 18,
+                "endLine": 18,
+                "startOffset": 4,
+                "endOffset": 20
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add a docstring to this function.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD2mx6rd7t2T3qqf",
+            "rule": "python:S5754",
+            "severity": "CRITICAL",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/index_pdfs.py",
+            "project": "DaveDaveFind",
+            "line": 21,
+            "hash": "3e264f5fbab10735799511f21ca70842",
+            "textRange": {
+                "startLine": 21,
+                "endLine": 21,
+                "startOffset": 1,
+                "endOffset": 7
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Specify an exception class to catch or reraise the exception",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "bad-practice",
+                "error-handling",
+                "suspicious"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD2lx6rd7t2T3qqI",
+            "rule": "python:S1131",
+            "severity": "MINOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/index_pdfs.py",
+            "project": "DaveDaveFind",
+            "line": 41,
+            "textRange": {
+                "startLine": 41,
+                "endLine": 41,
+                "startOffset": 0,
+                "endOffset": 2
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove the useless trailing whitespaces at the end of this line.",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD2lx6rd7t2T3qqJ",
+            "rule": "python:S1131",
+            "severity": "MINOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/index_pdfs.py",
+            "project": "DaveDaveFind",
+            "line": 42,
+            "textRange": {
+                "startLine": 42,
+                "endLine": 42,
+                "startOffset": 0,
+                "endOffset": 8
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove the useless trailing whitespaces at the end of this line.",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD2mx6rd7t2T3qqg",
+            "rule": "python:S1720",
+            "severity": "MAJOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/index_pdfs.py",
+            "project": "DaveDaveFind",
+            "line": 43,
+            "hash": "4a3cf8839716b3540a96775832d77850",
+            "textRange": {
+                "startLine": 43,
+                "endLine": 43,
+                "startOffset": 4,
+                "endOffset": 16
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add a docstring to this function.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD2lx6rd7t2T3qqK",
+            "rule": "python:S1131",
+            "severity": "MINOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/index_pdfs.py",
+            "project": "DaveDaveFind",
+            "line": 48,
+            "textRange": {
+                "startLine": 48,
+                "endLine": 48,
+                "startOffset": 0,
+                "endOffset": 8
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove the useless trailing whitespaces at the end of this line.",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD2mx6rd7t2T3qqh",
+            "rule": "python:S1720",
+            "severity": "MAJOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/index_pdfs.py",
+            "project": "DaveDaveFind",
+            "line": 50,
+            "hash": "bd731be6d725028dc0d303ffa13f4377",
+            "textRange": {
+                "startLine": 50,
+                "endLine": 50,
+                "startOffset": 4,
+                "endOffset": 14
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add a docstring to this function.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD2mx6rd7t2T3qqi",
+            "rule": "python:S1720",
+            "severity": "MAJOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/index_pdfs.py",
+            "project": "DaveDaveFind",
+            "line": 57,
+            "hash": "32aed3f9edba413b63182ca493fe4ee7",
+            "textRange": {
+                "startLine": 57,
+                "endLine": 57,
+                "startOffset": 4,
+                "endOffset": 15
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add a docstring to this function.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD2mx6rd7t2T3qqj",
+            "rule": "python:S1720",
+            "severity": "MAJOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/index_pdfs.py",
+            "project": "DaveDaveFind",
+            "line": 64,
+            "hash": "dfef1f8189bb90d3af2b318bd7c0ce9a",
+            "textRange": {
+                "startLine": 64,
+                "endLine": 64,
+                "startOffset": 4,
+                "endOffset": 26
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add a docstring to this function.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD2mx6rd7t2T3qqk",
+            "rule": "python:PrintStatementUsage",
+            "severity": "MAJOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/index_pdfs.py",
+            "project": "DaveDaveFind",
+            "line": 74,
+            "hash": "ce779b9096f18fb3997b206471c63132",
+            "textRange": {
+                "startLine": 74,
+                "endLine": 74,
+                "startOffset": 2,
+                "endOffset": 7
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace print statement by built-in function.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "obsolete",
+                "python3"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD2mx6rd7t2T3qql",
+            "rule": "python:S1720",
+            "severity": "MAJOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/index_pdfs.py",
+            "project": "DaveDaveFind",
+            "line": 76,
+            "hash": "af6937e3fc293109f0c0ebb79ff83669",
+            "textRange": {
+                "startLine": 76,
+                "endLine": 76,
+                "startOffset": 4,
+                "endOffset": 18
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add a docstring to this function.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD2mx6rd7t2T3qqm",
+            "rule": "python:S1542",
+            "severity": "MAJOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/index_pdfs.py",
+            "project": "DaveDaveFind",
+            "line": 76,
+            "hash": "af6937e3fc293109f0c0ebb79ff83669",
+            "textRange": {
+                "startLine": 76,
+                "endLine": 76,
+                "startOffset": 4,
+                "endOffset": 18
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Rename function \"removeNonAscii\" to match the regular expression ^[a-z_][a-z0-9_]*$.",
+            "effort": "10min",
+            "debt": "10min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD2mx6rd7t2T3qqr",
+            "rule": "python:OneStatementPerLine",
+            "severity": "MAJOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/index_pdfs.py",
+            "project": "DaveDaveFind",
+            "line": 76,
+            "hash": "af6937e3fc293109f0c0ebb79ff83669",
+            "textRange": {
+                "startLine": 76,
+                "endLine": 76,
+                "startOffset": 0,
+                "endOffset": 65
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "At most one statement is allowed per line, but 2 statements were found on this line.",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD2mx6rd7t2T3qqn",
+            "rule": "python:S1720",
+            "severity": "MAJOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/index_pdfs.py",
+            "project": "DaveDaveFind",
+            "line": 78,
+            "hash": "68f0b7aafe4973ab260ae4807f360a48",
+            "textRange": {
+                "startLine": 78,
+                "endLine": 78,
+                "startOffset": 4,
+                "endOffset": 18
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add a docstring to this function.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD2mx6rd7t2T3qqo",
+            "rule": "python:PrintStatementUsage",
+            "severity": "MAJOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/index_pdfs.py",
+            "project": "DaveDaveFind",
+            "line": 92,
+            "hash": "b7882d68a43c600f6987f28235b50fd0",
+            "textRange": {
+                "startLine": 92,
+                "endLine": 92,
+                "startOffset": 2,
+                "endOffset": 7
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace print statement by built-in function.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "obsolete",
+                "python3"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD2mx6rd7t2T3qqp",
+            "rule": "python:S1720",
+            "severity": "MAJOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/index_pdfs.py",
+            "project": "DaveDaveFind",
+            "line": 94,
+            "hash": "1ff877580fc1f2cf117eccca44cdc38e",
+            "textRange": {
+                "startLine": 94,
+                "endLine": 94,
+                "startOffset": 4,
+                "endOffset": 16
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add a docstring to this function.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD2mx6rd7t2T3qqq",
+            "rule": "python:PrintStatementUsage",
+            "severity": "MAJOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/index_pdfs.py",
+            "project": "DaveDaveFind",
+            "line": 97,
+            "hash": "951469ad4ba251ff66807ed3b64d8567",
+            "textRange": {
+                "startLine": 97,
+                "endLine": 97,
+                "startOffset": 1,
+                "endOffset": 6
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace print statement by built-in function.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "obsolete",
+                "python3"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD1Jx6rd7t2T3qpU",
+            "rule": "python:S1720",
+            "severity": "MAJOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/udacity_crawler.py",
+            "project": "DaveDaveFind",
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add a docstring to this module.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD1Jx6rd7t2T3qpV",
+            "rule": "python:S113",
+            "severity": "MINOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/udacity_crawler.py",
+            "project": "DaveDaveFind",
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add a new line at the end of this file \"udacity_crawler.py\".",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD1Jx6rd7t2T3qpW",
+            "rule": "python:S1720",
+            "severity": "MAJOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/udacity_crawler.py",
+            "project": "DaveDaveFind",
+            "line": 12,
+            "hash": "5e56114787d22d8f25f42a68dd8b973c",
+            "textRange": {
+                "startLine": 12,
+                "endLine": 12,
+                "startOffset": 4,
+                "endOffset": 13
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add a docstring to this function.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD1Jx6rd7t2T3qpX",
+            "rule": "python:S139",
+            "severity": "MINOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/udacity_crawler.py",
+            "project": "DaveDaveFind",
+            "line": 12,
+            "hash": "5e56114787d22d8f25f42a68dd8b973c",
+            "textRange": {
+                "startLine": 12,
+                "endLine": 12,
+                "startOffset": 43,
+                "endOffset": 76
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Move this trailing comment on the previous empty line.",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD1Jx6rd7t2T3qo-",
+            "rule": "python:S1131",
+            "severity": "MINOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/udacity_crawler.py",
+            "project": "DaveDaveFind",
+            "line": 17,
+            "hash": "f680da5198ab96a274e835cc5f7ec6aa",
+            "textRange": {
+                "startLine": 17,
+                "endLine": 17,
+                "startOffset": 0,
+                "endOffset": 7
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove the useless trailing whitespaces at the end of this line.",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD1Jx6rd7t2T3qpY",
+            "rule": "python:S2836",
+            "severity": "MAJOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/udacity_crawler.py",
+            "project": "DaveDaveFind",
+            "line": 17,
+            "hash": "f680da5198ab96a274e835cc5f7ec6aa",
+            "textRange": {
+                "startLine": 17,
+                "endLine": 17,
+                "startOffset": 1,
+                "endOffset": 5
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add a \"break\" statement or remove this \"else\" clause.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "suspicious"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD1Jx6rd7t2T3qpa",
+            "rule": "python:PrintStatementUsage",
+            "severity": "MAJOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/udacity_crawler.py",
+            "project": "DaveDaveFind",
+            "line": 18,
+            "hash": "98adc192b1ba8028ab35bc95a658667a",
+            "textRange": {
+                "startLine": 18,
+                "endLine": 18,
+                "startOffset": 2,
+                "endOffset": 7
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace print statement by built-in function.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "obsolete",
+                "python3"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD1Jx6rd7t2T3qpZ",
+            "rule": "python:S2772",
+            "severity": "MINOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/udacity_crawler.py",
+            "project": "DaveDaveFind",
+            "line": 19,
+            "hash": "1a1dc91c907325c69271ddf0c944bc72",
+            "textRange": {
+                "startLine": 19,
+                "endLine": 19,
+                "startOffset": 2,
+                "endOffset": 6
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this unneeded \"pass\".",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD1Jx6rd7t2T3qpb",
+            "rule": "python:S139",
+            "severity": "MINOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/udacity_crawler.py",
+            "project": "DaveDaveFind",
+            "line": 21,
+            "hash": "9783a2d67edde3c683f75a677bac8aee",
+            "textRange": {
+                "startLine": 21,
+                "endLine": 21,
+                "startOffset": 13,
+                "endOffset": 49
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Move this trailing comment on the previous empty line.",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD1Jx6rd7t2T3qo_",
+            "rule": "python:S1131",
+            "severity": "MINOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/udacity_crawler.py",
+            "project": "DaveDaveFind",
+            "line": 23,
+            "hash": "6576d2abcf3322181bdc620773a9dfbf",
+            "textRange": {
+                "startLine": 23,
+                "endLine": 23,
+                "startOffset": 0,
+                "endOffset": 15
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove the useless trailing whitespaces at the end of this line.",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD1Jx6rd7t2T3qpA",
+            "rule": "python:S1131",
+            "severity": "MINOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/udacity_crawler.py",
+            "project": "DaveDaveFind",
+            "line": 24,
+            "hash": "d67391893719a5264bb47383a9dc53ef",
+            "textRange": {
+                "startLine": 24,
+                "endLine": 24,
+                "startOffset": 0,
+                "endOffset": 16
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove the useless trailing whitespaces at the end of this line.",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD1Jx6rd7t2T3qpc",
+            "rule": "python:PrintStatementUsage",
+            "severity": "MAJOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/udacity_crawler.py",
+            "project": "DaveDaveFind",
+            "line": 26,
+            "hash": "33d05027c447aea79f5544c5e1f1a9d5",
+            "textRange": {
+                "startLine": 26,
+                "endLine": 26,
+                "startOffset": 2,
+                "endOffset": 7
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace print statement by built-in function.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "obsolete",
+                "python3"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD1Jx6rd7t2T3qpd",
+            "rule": "python:PrintStatementUsage",
+            "severity": "MAJOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/udacity_crawler.py",
+            "project": "DaveDaveFind",
+            "line": 27,
+            "hash": "121c3e232d70a545edfd5dc1ebc83116",
+            "textRange": {
+                "startLine": 27,
+                "endLine": 27,
+                "startOffset": 2,
+                "endOffset": 7
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace print statement by built-in function.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "obsolete",
+                "python3"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD1Jx6rd7t2T3qpe",
+            "rule": "python:S125",
+            "severity": "MAJOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/udacity_crawler.py",
+            "project": "DaveDaveFind",
+            "line": 36,
+            "hash": "9ea11a53fcac111714b4edc8950dcbfe",
+            "textRange": {
+                "startLine": 36,
+                "endLine": 36,
+                "startOffset": 3,
+                "endOffset": 17
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this commented out code.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD1Kx6rd7t2T3qpf",
+            "rule": "python:S125",
+            "severity": "MAJOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/udacity_crawler.py",
+            "project": "DaveDaveFind",
+            "line": 38,
+            "hash": "12ca01788b83b8f87cacb2512dd943d9",
+            "textRange": {
+                "startLine": 38,
+                "endLine": 38,
+                "startOffset": 3,
+                "endOffset": 17
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this commented out code.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD1Jx6rd7t2T3qpS",
+            "rule": "python:LineLength",
+            "severity": "MAJOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/udacity_crawler.py",
+            "project": "DaveDaveFind",
+            "line": 40,
+            "hash": "60f48a5b932e5e413ca88518226bedf5",
+            "textRange": {
+                "startLine": 40,
+                "endLine": 40,
+                "startOffset": 0,
+                "endOffset": 137
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "The line contains 137 characters which is greater than 120 authorized.",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD1Kx6rd7t2T3qpg",
+            "rule": "python:S1720",
+            "severity": "MAJOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/udacity_crawler.py",
+            "project": "DaveDaveFind",
+            "line": 44,
+            "hash": "584548a1d8de0bf604596661399b68f3",
+            "textRange": {
+                "startLine": 44,
+                "endLine": 44,
+                "startOffset": 4,
+                "endOffset": 17
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add a docstring to this function.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD1Kx6rd7t2T3qph",
+            "rule": "python:S5754",
+            "severity": "CRITICAL",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/udacity_crawler.py",
+            "project": "DaveDaveFind",
+            "line": 47,
+            "hash": "3e264f5fbab10735799511f21ca70842",
+            "textRange": {
+                "startLine": 47,
+                "endLine": 47,
+                "startOffset": 1,
+                "endOffset": 7
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Specify an exception class to catch or reraise the exception",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "bad-practice",
+                "error-handling",
+                "suspicious"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD1Kx6rd7t2T3qpi",
+            "rule": "python:S5754",
+            "severity": "CRITICAL",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/udacity_crawler.py",
+            "project": "DaveDaveFind",
+            "line": 53,
+            "hash": "3e264f5fbab10735799511f21ca70842",
+            "textRange": {
+                "startLine": 53,
+                "endLine": 53,
+                "startOffset": 1,
+                "endOffset": 7
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Specify an exception class to catch or reraise the exception",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "bad-practice",
+                "error-handling",
+                "suspicious"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD1Jx6rd7t2T3qpB",
+            "rule": "python:S1131",
+            "severity": "MINOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/udacity_crawler.py",
+            "project": "DaveDaveFind",
+            "line": 55,
+            "hash": "704549a444032a9b622d6bd40d288254",
+            "textRange": {
+                "startLine": 55,
+                "endLine": 55,
+                "startOffset": 0,
+                "endOffset": 27
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove the useless trailing whitespaces at the end of this line.",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD1Kx6rd7t2T3qpj",
+            "rule": "python:S1720",
+            "severity": "MAJOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/udacity_crawler.py",
+            "project": "DaveDaveFind",
+            "line": 57,
+            "hash": "8fac0310f6b88d0e7de121f20f5673ce",
+            "textRange": {
+                "startLine": 57,
+                "endLine": 57,
+                "startOffset": 4,
+                "endOffset": 17
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add a docstring to this function.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD1Kx6rd7t2T3qpl",
+            "rule": "python:S5754",
+            "severity": "CRITICAL",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/udacity_crawler.py",
+            "project": "DaveDaveFind",
+            "line": 69,
+            "hash": "3e264f5fbab10735799511f21ca70842",
+            "textRange": {
+                "startLine": 69,
+                "endLine": 69,
+                "startOffset": 1,
+                "endOffset": 7
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Specify an exception class to catch or reraise the exception",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "bad-practice",
+                "error-handling",
+                "suspicious"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD1Kx6rd7t2T3qpm",
+            "rule": "python:S125",
+            "severity": "MAJOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/udacity_crawler.py",
+            "project": "DaveDaveFind",
+            "line": 71,
+            "hash": "ad361043951703f33e24955aabc63b42",
+            "textRange": {
+                "startLine": 71,
+                "endLine": 71,
+                "startOffset": 1,
+                "endOffset": 10
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this commented out code.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD1Kx6rd7t2T3qpn",
+            "rule": "python:PrintStatementUsage",
+            "severity": "MAJOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/udacity_crawler.py",
+            "project": "DaveDaveFind",
+            "line": 74,
+            "hash": "ce37649f5f2abf7c40e285d085c5d62d",
+            "textRange": {
+                "startLine": 74,
+                "endLine": 74,
+                "startOffset": 2,
+                "endOffset": 7
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace print statement by built-in function.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "obsolete",
+                "python3"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD1Jx6rd7t2T3qpC",
+            "rule": "python:S1131",
+            "severity": "MINOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/udacity_crawler.py",
+            "project": "DaveDaveFind",
+            "line": 76,
+            "hash": "7499a2e3eb94def084b18b94a45a6259",
+            "textRange": {
+                "startLine": 76,
+                "endLine": 76,
+                "startOffset": 0,
+                "endOffset": 23
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove the useless trailing whitespaces at the end of this line.",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD1Kx6rd7t2T3qpo",
+            "rule": "python:S108",
+            "severity": "MAJOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/udacity_crawler.py",
+            "project": "DaveDaveFind",
+            "line": 77,
+            "hash": "1a1dc91c907325c69271ddf0c944bc72",
+            "textRange": {
+                "startLine": 77,
+                "endLine": 77,
+                "startOffset": 3,
+                "endOffset": 7
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Either remove or fill this block of code.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "suspicious"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD1Jx6rd7t2T3qpD",
+            "rule": "python:S1131",
+            "severity": "MINOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/udacity_crawler.py",
+            "project": "DaveDaveFind",
+            "line": 79,
+            "hash": "bd88f2475c9f73ff676ed0a72df04dd3",
+            "textRange": {
+                "startLine": 79,
+                "endLine": 79,
+                "startOffset": 0,
+                "endOffset": 44
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove the useless trailing whitespaces at the end of this line.",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD1Kx6rd7t2T3qpq",
+            "rule": "python:PrintStatementUsage",
+            "severity": "MAJOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/udacity_crawler.py",
+            "project": "DaveDaveFind",
+            "line": 79,
+            "hash": "bd88f2475c9f73ff676ed0a72df04dd3",
+            "textRange": {
+                "startLine": 79,
+                "endLine": 79,
+                "startOffset": 3,
+                "endOffset": 8
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace print statement by built-in function.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "obsolete",
+                "python3"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD1Jx6rd7t2T3qpE",
+            "rule": "python:S1131",
+            "severity": "MINOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/udacity_crawler.py",
+            "project": "DaveDaveFind",
+            "line": 80,
+            "hash": "1a1dc91c907325c69271ddf0c944bc72",
+            "textRange": {
+                "startLine": 80,
+                "endLine": 80,
+                "startOffset": 0,
+                "endOffset": 9
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove the useless trailing whitespaces at the end of this line.",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD1Kx6rd7t2T3qpp",
+            "rule": "python:S2772",
+            "severity": "MINOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/udacity_crawler.py",
+            "project": "DaveDaveFind",
+            "line": 80,
+            "hash": "1a1dc91c907325c69271ddf0c944bc72",
+            "textRange": {
+                "startLine": 80,
+                "endLine": 80,
+                "startOffset": 3,
+                "endOffset": 7
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this unneeded \"pass\".",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD1Jx6rd7t2T3qpF",
+            "rule": "python:S1131",
+            "severity": "MINOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/udacity_crawler.py",
+            "project": "DaveDaveFind",
+            "line": 81,
+            "hash": "bd221dde2814332fb4a07d58c62f36c2",
+            "textRange": {
+                "startLine": 81,
+                "endLine": 81,
+                "startOffset": 0,
+                "endOffset": 48
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove the useless trailing whitespaces at the end of this line.",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD1Jx6rd7t2T3qpG",
+            "rule": "python:S1131",
+            "severity": "MINOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/udacity_crawler.py",
+            "project": "DaveDaveFind",
+            "line": 82,
+            "hash": "792c2f6599e4812ee77b53466ab1f8bd",
+            "textRange": {
+                "startLine": 82,
+                "endLine": 82,
+                "startOffset": 0,
+                "endOffset": 75
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove the useless trailing whitespaces at the end of this line.",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD1Jx6rd7t2T3qpH",
+            "rule": "python:S1131",
+            "severity": "MINOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/udacity_crawler.py",
+            "project": "DaveDaveFind",
+            "line": 83,
+            "hash": "faf8e1cd834c27751e2d8bd6f263a0eb",
+            "textRange": {
+                "startLine": 83,
+                "endLine": 83,
+                "startOffset": 0,
+                "endOffset": 60
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove the useless trailing whitespaces at the end of this line.",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD1Kx6rd7t2T3qpr",
+            "rule": "python:S108",
+            "severity": "MAJOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/udacity_crawler.py",
+            "project": "DaveDaveFind",
+            "line": 84,
+            "hash": "1a1dc91c907325c69271ddf0c944bc72",
+            "textRange": {
+                "startLine": 84,
+                "endLine": 84,
+                "startOffset": 3,
+                "endOffset": 7
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Either remove or fill this block of code.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "suspicious"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD1Kx6rd7t2T3qps",
+            "rule": "python:S1720",
+            "severity": "MAJOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/udacity_crawler.py",
+            "project": "DaveDaveFind",
+            "line": 92,
+            "hash": "a8759b3ffea8a3dd5b1057fea366a4bc",
+            "textRange": {
+                "startLine": 92,
+                "endLine": 92,
+                "startOffset": 4,
+                "endOffset": 17
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add a docstring to this function.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD1Jx6rd7t2T3qo8",
+            "rule": "python:S1066",
+            "severity": "MAJOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/udacity_crawler.py",
+            "project": "DaveDaveFind",
+            "line": 95,
+            "hash": "5de4c789087ba7e7c60b6bd29ce4cd44",
+            "textRange": {
+                "startLine": 95,
+                "endLine": 95,
+                "startOffset": 9,
+                "endOffset": 11
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/udacity_crawler.py",
+                            "textRange": {
+                                "startLine": 94,
+                                "endLine": 94,
+                                "startOffset": 5,
+                                "endOffset": 7
+                            },
+                            "msg": "enclosing",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Merge this if statement with the enclosing one.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "clumsy"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD1Jx6rd7t2T3qo9",
+            "rule": "python:S1066",
+            "severity": "MAJOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/udacity_crawler.py",
+            "project": "DaveDaveFind",
+            "line": 96,
+            "hash": "b13471d6526d49930a866a9d4baf8575",
+            "textRange": {
+                "startLine": 96,
+                "endLine": 96,
+                "startOffset": 10,
+                "endOffset": 12
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/udacity_crawler.py",
+                            "textRange": {
+                                "startLine": 95,
+                                "endLine": 95,
+                                "startOffset": 9,
+                                "endOffset": 11
+                            },
+                            "msg": "enclosing",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Merge this if statement with the enclosing one.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "clumsy"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD1Kx6rd7t2T3qpt",
+            "rule": "python:S1720",
+            "severity": "MAJOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/udacity_crawler.py",
+            "project": "DaveDaveFind",
+            "line": 100,
+            "hash": "2c2590744f5e458f3f3fcd4a4295f253",
+            "textRange": {
+                "startLine": 100,
+                "endLine": 100,
+                "startOffset": 4,
+                "endOffset": 21
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add a docstring to this function.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD1Kx6rd7t2T3qpu",
+            "rule": "python:S5754",
+            "severity": "CRITICAL",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/udacity_crawler.py",
+            "project": "DaveDaveFind",
+            "line": 103,
+            "hash": "3e264f5fbab10735799511f21ca70842",
+            "textRange": {
+                "startLine": 103,
+                "endLine": 103,
+                "startOffset": 1,
+                "endOffset": 7
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Specify an exception class to catch or reraise the exception",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "bad-practice",
+                "error-handling",
+                "suspicious"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD1Jx6rd7t2T3qpI",
+            "rule": "python:S1131",
+            "severity": "MINOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/udacity_crawler.py",
+            "project": "DaveDaveFind",
+            "line": 118,
+            "textRange": {
+                "startLine": 118,
+                "endLine": 118,
+                "startOffset": 0,
+                "endOffset": 2
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove the useless trailing whitespaces at the end of this line.",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD1Jx6rd7t2T3qpJ",
+            "rule": "python:S1131",
+            "severity": "MINOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/udacity_crawler.py",
+            "project": "DaveDaveFind",
+            "line": 119,
+            "textRange": {
+                "startLine": 119,
+                "endLine": 119,
+                "startOffset": 0,
+                "endOffset": 8
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove the useless trailing whitespaces at the end of this line.",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD1Kx6rd7t2T3qpv",
+            "rule": "python:S1720",
+            "severity": "MAJOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/udacity_crawler.py",
+            "project": "DaveDaveFind",
+            "line": 120,
+            "hash": "4a3cf8839716b3540a96775832d77850",
+            "textRange": {
+                "startLine": 120,
+                "endLine": 120,
+                "startOffset": 4,
+                "endOffset": 16
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add a docstring to this function.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD1Kx6rd7t2T3qpw",
+            "rule": "python:S1720",
+            "severity": "MAJOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/udacity_crawler.py",
+            "project": "DaveDaveFind",
+            "line": 126,
+            "hash": "163f524875811519870fa6d032201851",
+            "textRange": {
+                "startLine": 126,
+                "endLine": 126,
+                "startOffset": 4,
+                "endOffset": 10
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add a docstring to this function.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD1Kx6rd7t2T3qpx",
+            "rule": "python:S1720",
+            "severity": "MAJOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/udacity_crawler.py",
+            "project": "DaveDaveFind",
+            "line": 132,
+            "hash": "c69da7bb1f77a9aa8333d2d678d8c60f",
+            "textRange": {
+                "startLine": 132,
+                "endLine": 132,
+                "startOffset": 4,
+                "endOffset": 12
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add a docstring to this function.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD1Kx6rd7t2T3qpy",
+            "rule": "python:S1142",
+            "severity": "MAJOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/udacity_crawler.py",
+            "project": "DaveDaveFind",
+            "line": 132,
+            "hash": "c69da7bb1f77a9aa8333d2d678d8c60f",
+            "textRange": {
+                "startLine": 132,
+                "endLine": 132,
+                "startOffset": 4,
+                "endOffset": 12
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/udacity_crawler.py",
+                            "textRange": {
+                                "startLine": 141,
+                                "endLine": 141,
+                                "startOffset": 2,
+                                "endOffset": 30
+                            },
+                            "msg": "\"return\" statement.",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/udacity_crawler.py",
+                            "textRange": {
+                                "startLine": 143,
+                                "endLine": 143,
+                                "startOffset": 2,
+                                "endOffset": 24
+                            },
+                            "msg": "\"return\" statement.",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/udacity_crawler.py",
+                            "textRange": {
+                                "startLine": 148,
+                                "endLine": 148,
+                                "startOffset": 3,
+                                "endOffset": 37
+                            },
+                            "msg": "\"return\" statement.",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/udacity_crawler.py",
+                            "textRange": {
+                                "startLine": 150,
+                                "endLine": 150,
+                                "startOffset": 3,
+                                "endOffset": 31
+                            },
+                            "msg": "\"return\" statement.",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "This function has 4 returns or yields, which is more than the 3 allowed.",
+            "effort": "20min",
+            "debt": "20min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "brain-overload"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD1Kx6rd7t2T3qpz",
+            "rule": "python:PrintStatementUsage",
+            "severity": "MAJOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/udacity_crawler.py",
+            "project": "DaveDaveFind",
+            "line": 140,
+            "hash": "22b24aff6461c2287db912feadb0a96c",
+            "textRange": {
+                "startLine": 140,
+                "endLine": 140,
+                "startOffset": 2,
+                "endOffset": 7
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace print statement by built-in function.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "obsolete",
+                "python3"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD1Kx6rd7t2T3qp0",
+            "rule": "python:PrintStatementUsage",
+            "severity": "MAJOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/udacity_crawler.py",
+            "project": "DaveDaveFind",
+            "line": 145,
+            "hash": "48ca5d43a5d118e298d3cfeed6bcda8b",
+            "textRange": {
+                "startLine": 145,
+                "endLine": 145,
+                "startOffset": 2,
+                "endOffset": 7
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace print statement by built-in function.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "obsolete",
+                "python3"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD1Kx6rd7t2T3qp1",
+            "rule": "python:S5754",
+            "severity": "CRITICAL",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/udacity_crawler.py",
+            "project": "DaveDaveFind",
+            "line": 149,
+            "hash": "3e264f5fbab10735799511f21ca70842",
+            "textRange": {
+                "startLine": 149,
+                "endLine": 149,
+                "startOffset": 2,
+                "endOffset": 8
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Specify an exception class to catch or reraise the exception",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "bad-practice",
+                "error-handling",
+                "suspicious"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD1Kx6rd7t2T3qp2",
+            "rule": "python:S1720",
+            "severity": "MAJOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/udacity_crawler.py",
+            "project": "DaveDaveFind",
+            "line": 152,
+            "hash": "7604ea66b366f9ebb4ca8bd011a824b9",
+            "textRange": {
+                "startLine": 152,
+                "endLine": 152,
+                "startOffset": 4,
+                "endOffset": 17
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add a docstring to this function.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYfEdD1Kx6rd7t2T3qp4",
+            "rule": "python:S139",
+            "severity": "MINOR",
+            "component": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/udacity_crawler.py",
+            "project": "DaveDaveFind",
+            "line": 153,
+            "hash": "9e10c0cf1e4a78a187683a6393be2adf",
+            "textRange": {
+                "startLine": 153,
+                "endLine": 153,
+                "startOffset": 12,
+                "endOffset": 28
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Move this trailing comment on the previous empty line.",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "wsprouse@deloitte.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2023-04-27T20:42:30+0000",
+            "updateDate": "2023-05-08T17:55:18+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        }
+    ],
+    "components": [
+        {
+            "key": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/doc_crawler.py",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "doc_crawler.py",
+            "longName": "sample_projects/DaveDaveFind-master/crawler/doc_crawler.py",
+            "path": "sample_projects/DaveDaveFind-master/crawler/doc_crawler.py"
+        },
+        {
+            "key": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/add_videos.py",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "add_videos.py",
+            "longName": "sample_projects/DaveDaveFind-master/crawler/add_videos.py",
+            "path": "sample_projects/DaveDaveFind-master/crawler/add_videos.py"
+        },
+        {
+            "key": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/index_pdfs.py",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "index_pdfs.py",
+            "longName": "sample_projects/DaveDaveFind-master/crawler/index_pdfs.py",
+            "path": "sample_projects/DaveDaveFind-master/crawler/index_pdfs.py"
+        },
+        {
+            "key": "DaveDaveFind:sample_projects/DaveDaveFind-master/crawler/udacity_crawler.py",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "udacity_crawler.py",
+            "longName": "sample_projects/DaveDaveFind-master/crawler/udacity_crawler.py",
+            "path": "sample_projects/DaveDaveFind-master/crawler/udacity_crawler.py"
+        },
+        {
+            "key": "DaveDaveFind",
+            "enabled": true,
+            "qualifier": "TRK",
+            "name": "DaveDaveFind",
+            "longName": "DaveDaveFind"
+        }
+    ],
+    "facets": []
+}
