@@ -1,64 +1,65 @@
-using Xunit;
+using NUnit.Framework;
 
+[TestFixture]
 public class RectangleTests
 {
-    [Fact]
-    public void CalculateArea_ReturnsCorrectArea()
+    [Test]
+    public void CalculateArea_LengthAndWidthArePositive_ReturnsCorrectArea()
     {
         // Arrange
-        double length = 4;
-        double width = 5;
+        double length = 5;
+        double width = 4;
         Rectangle rectangle = new Rectangle(length, width);
 
         // Act
-        double area = rectangle.CalculateArea();
+        double result = rectangle.CalculateArea();
 
         // Assert
-        Assert.Equal(20, area);
+        Assert.AreEqual(20, result);
     }
 
-    [Fact]
-    public void CalculateArea_ReturnsZeroWhenLengthIsZero()
+    [Test]
+    public void CalculateArea_LengthIsZero_ReturnsZeroArea()
     {
         // Arrange
         double length = 0;
-        double width = 5;
+        double width = 4;
         Rectangle rectangle = new Rectangle(length, width);
 
         // Act
-        double area = rectangle.CalculateArea();
+        double result = rectangle.CalculateArea();
 
         // Assert
-        Assert.Equal(0, area);
+        Assert.AreEqual(0, result);
     }
 
-    [Fact]
-    public void CalculateArea_ReturnsZeroWhenWidthIsZero()
+    [Test]
+    public void CalculateArea_WidthIsZero_ReturnsZeroArea()
     {
         // Arrange
-        double length = 4;
+        double length = 5;
         double width = 0;
         Rectangle rectangle = new Rectangle(length, width);
 
         // Act
-        double area = rectangle.CalculateArea();
+        double result = rectangle.CalculateArea();
 
         // Assert
-        Assert.Equal(0, area);
+        Assert.AreEqual(0, result);
     }
 
-    [Fact]
-    public void CalculateArea_ReturnsZeroWhenBothLengthAndWidthAreZero()
+    [Test]
+    public void CalculateArea_LengthAndWidthAreNegative_ReturnsCorrectArea()
     {
         // Arrange
-        double length = 0;
-        double width = 0;
+        double length = -5;
+        double width = -4;
         Rectangle rectangle = new Rectangle(length, width);
 
         // Act
-        double area = rectangle.CalculateArea();
+        double result = rectangle.CalculateArea();
 
         // Assert
-        Assert.Equal(0, area);
+        Assert.AreEqual(20, result);
     }
 }
