@@ -72,10 +72,113 @@ def translate_code(content, target_language):
         max_tokens=500
     )
     return response['choices'][0]['message']['content']
+    
+def chat_with_code(content, user_query):
+    """Function to chat with the code using LLM."""
+    prompt = f"Code:\n{content}\n\nUser: {user_query}\nCode: "
+    response = openai.ChatCompletion.create(
+        model="gpt-3.5-turbo",
+        messages=[{"role": "user", "content": prompt}],
+        temperature=0.7,
+        max_tokens=1000
+    )
+    return response['choices'][0]['message']['content']
+
+import streamlit as st
+import openai
+import re
+from gradio_client import Client
+
+# This function checks if the content is a valid C# method
+def is_valid_csharp_method(content):
+    pattern = r"(public|private|internal|protected)(\s+static)?\s+\w+\s+\w+\("
+    return re.search(pattern, content) is not None
+
+# Modularized function to interact with an API (in this case, ChatGPT)
+def send_to_api(content, endpoint, test_framework):
+    if endpoint == "gpt-3.5-turbo":
+        prompt = f"Please provide {test_framework} unit tests for the following C# method to maximize code coverage. Only return the code, no additional explanations:\n{content}"
+        response = openai.ChatCompletion.create(
+            model="gpt-3.5-turbo",
+            messages=[{"role": "user", "content": prompt}],
+            temperature=0.7,
+            max_tokens=3000
+        )
+        return response['choices'][0]['message']['content']
+    elif endpoint == "mosaicml/mpt-7b-instruct":
+        prompt = f"Please provide {test_framework} unit tests for the following C# method to maximize code coverage. Only return the code, no additional explanations:\n{content}"
+        
+        client = Client("https://faefb20476a7197ca8.gradio.live")
+        params = '{"max_new_tokens": 100, "temperature": 0.05}'  # Use a single dictionary
+        response = client.predict(prompt, params, api_name="/greet")
+        return response
+        
+        
+def explain_code(content, endpoint):
+    """Function to send code to the API for explanation."""
+    prompt = f"Please explain the following C# method:\n\n{content}. Only return the explanation, no code."
+    if endpoint == "gpt-3.5-turbo":
+        response = openai.ChatCompletion.create(
+            model="gpt-3.5-turbo",
+            messages=[{"role": "user", "content": prompt}],
+            temperature=0.7,
+            max_tokens=1000
+        )
+        return response['choices'][0]['message']['content']
+    elif endpoint == "mosaicml/mpt-7b-instruct":
+        client = Client("https://faefb20476a7197ca8.gradio.live")
+        params = '{"max_new_tokens": 100, "temperature": 0.05}'
+        response = client.predict(prompt, params, api_name="/greet")
+        return response
+        
+
+def critique_input_method(content):
+    prompt = f"Please critique the following C# method and provide suggestions for improvement:\n\n{content}. Response should only contain the critique and suggestions."
+    response = openai.ChatCompletion.create(
+        model="gpt-3.5-turbo",
+        messages=[
+            {"role": "user", "content": prompt},
+            {"role": "system", "content": prompt}
+        ],
+        temperature=0.7,
+        max_tokens=500
+    )
+    return response['choices'][0]['message']['content']
+    
+def translate_code(content, target_language):
+    """Function to translate code to another language using LLM."""
+    prompt = f"Translate the following C# code to {target_language}:\n\n{content}"
+    response = openai.ChatCompletion.create(
+        model="gpt-3.5-turbo",
+        messages=[
+            {"role": "user", "content": prompt},
+            {"role": "system", "content": prompt}
+        ],
+        temperature=0.7,
+        max_tokens=500
+    )
+    return response['choices'][0]['message']['content']
+    
+def chat_with_code(content, user_query):
+    """Function to chat with the code using LLM."""
+    prompt = f"Code:\n{content}\n\nUser: {user_query}\nCode: "
+    response = openai.ChatCompletion.create(
+        model="gpt-3.5-turbo",
+        messages=[{"role": "user", "content": prompt}],
+        temperature=0.7,
+        max_tokens=1000
+    )
+    return response['choices'][0]['message']['content']
 
 def main():
-    st.title("Unit Test Generation Tool")
 
+
+    # Display the centered logo
+    col1, col2, col3 = st.columns([1, 2, 1])
+    with col2:
+        st.image("imgs/tioca_chal_coin.png", width=300)  # Adjust width as needed
+
+    st.title("Unit Test Generation Tool")
     # Organize "Select API Endpoint", "Select Test Framework", and "Select Target Language" in the same row
     col1, col2, col3 = st.columns(3)
     with col1:
@@ -150,8 +253,26 @@ def main():
                 st.subheader(f"Translated Code ({target_language})")
                 st.code(st.session_state.translated_code, language=target_language.lower())
 
+            # Chat with code section
+            st.markdown("---")
+            st.subheader("Chat with the Code")
+            user_query = st.text_input("Ask a question about the code:", key="chat_input")
+
+            if user_query and not "last_query" in st.session_state:
+                st.session_state.last_query = user_query
+                with st.spinner("Waiting for response..."):
+                    response = chat_with_code(content, user_query)
+                    st.session_state.chat_response = response
+                st.code(st.session_state.chat_response, language='csharp')
+            elif "last_query" in st.session_state and st.session_state.last_query != user_query:
+                # Reset last_query to allow new queries
+                del st.session_state.last_query
+
         else:
             st.error("The uploaded file does not contain a valid C# method.")
 
 if __name__ == "__main__":
     main()
+
+
+
