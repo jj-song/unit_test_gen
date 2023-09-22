@@ -1,0 +1,35 @@
+h1 {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+}
+
+stButton > button {
+    background-color: lightseagreen;
+    color: white;
+    font-size: 1em;
+    padding: 0.25em 1em;
+    border: 2px solid lightseagreen;
+    border-radius: 3px;
+}
+
+stButton > button:hover {
+    background-color: white;
+    color: lightseagreen;
+}
+
+stTextInput > div > div > input {
+    padding: 0.5em;
+    border-radius: 3px;
+    border: 1px solid lightseagreen;
+}
+
+stSelectbox > div > div > div > select {
+    padding: 0.5em;
+    border-radius: 3px;
+    border: 1px solid lightseagreen;
+}
+
+stFileUploader > div > div > div > div {
+    border: 2px dashed lightseagreen;
+    border-radius: 3px;
+}
