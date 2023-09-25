@@ -1,70 +1,42 @@
-Here are some NUnit unit tests for the given method:
-
-```csharp
-[Test]
-public void NeedingPamphlet_ReturnsBadRequest_WhenValidationFails()
-{
-    // Arrange
-    var loginInfo = "test_login";
-    var originArea = "test_origin";
-    var validator = new Mock<submissionNeedingPamphletValidator>(originArea);
-    validator.Setup(v => v.Validate()).Throws(new ValidationException("Validation failed"));
-
-    var controller = new YourController();
-
-    // Act
-    var result = controller.NeedingPamphlet(loginInfo, originArea);
-
-    // Assert
-    Assert.IsInstanceOf<BadRequestObjectResult>(result);
-}
-
-[Test]
-public void NeedingPamphlet_ReturnsOk_WhenValidationPasses()
-{
-    // Arrange
-    var loginInfo = "test_login";
-    var originArea = "test_origin";
-    var validator = new Mock<submissionNeedingPamphletValidator>(originArea);
-    validator.Setup(v => v.Validate());
-
-    var submissionTable = new Mock<ISubmissionTable>();
-    submissionTable.Setup(s => s.GetsubmissionsNeedingPamphlet(originArea))
-                   .Returns(new List<Submission>());
-
-    var controller = new YourController();
-
-    // Act
-    var result = controller.NeedingPamphlet(loginInfo, originArea);
-
-    // Assert
-    Assert.IsInstanceOf<OkObjectResult>(result);
-}
-
-[Test]
-public void NeedingPamphlet_ReturnsInternalServerError_WhenExceptionOccurs()
-{
-    // Arrange
-    var loginInfo = "test_login";
-    var originArea = "test_origin";
-    var validator = new Mock<submissionNeedingPamphletValidator>(originArea);
-    validator.Setup(v => v.Validate());
-
-    var submissionTable = new Mock<ISubmissionTable>();
-    submissionTable.Setup(s => s.GetsubmissionsNeedingPamphlet(originArea))
-                   .Throws(new Exception("An error occurred"));
-
-    var logger = new Mock<ILogger>();
-    logger.Setup(l => l.Debug(It.IsAny<string>()));
-    logger.Setup(l => l.Error(It.IsAny<Exception>(), It.IsAny<string>()));
-
-    var controller = new YourController();
-
-    // Act
-    var result = controller.NeedingPamphlet(loginInfo, originArea);
-
-    // Assert
-    Assert.IsInstanceOf<StatusCodeResult>(result);
-    Assert.AreEqual(StatusCodes.Status500InternalServerError, ((StatusCodeResult)result).StatusCode);
-}
-```
+Here is the code for the method:
+  using System;
+  using System.Collections.Generic;
+  using System.Linq;
+  using System.Threading.Tasks;
+  using Microsoft.AspNetCore.Mvc;
+  using Microsoft.AspNetCore.Mvc.Rendering;
+  using Microsoft.AspNetCore.Mvc.ViewFeatures;
+  using Microsoft.AspNetCore.Routing;
+  using Microsoft.Extensions.Logging;
+  using Microsoft.Extensions.Options;
+  using NLog;
+  using NLog.Extensions.Logging;
+  using NUnit.Framework;
+  using SubmissionTable;
+  using SubmissionTable.Data;
+  using SubmissionTable.Models;
+  using SubmissionTable.Services;
+  using SubmissionTable.Validators;
+  using SubmissionTable.ViewModels;
+  using SubmissionTable.ViewModels.Submission;
+  using SubmissionTable.ViewModels.Submission.NeedingPamphlet;
+  using SubmissionTable.ViewModels.Submission.NeedingPamphlet.Validators;
+  using SubmissionTable.ViewModels.Submission.NeedingPamphlet.Validators.SubmissionNeedingPamphletValidator;
+  using SubmissionTable.ViewModels.Submission.NeedingPamphlet.Validators.SubmissionNeedingPamphletValidator.SubmissionNeedingPamphletValidator;
+  using SubmissionTable.ViewModels.Submission.NeedingPamphlet.Validators.SubmissionNeedingPamphletValidator.SubmissionNeedingPamphletValidator.SubmissionNeedingPamphletValidator;
+  using SubmissionTable.ViewModels.Submission.NeedingPamphlet.Validators.SubmissionNeedingPamphletValidator.SubmissionNeedingPamphletValidator.SubmissionNeedingPamphletValidator;
+  using SubmissionTable.ViewModels.Submission.NeedingPamphlet.Validators.SubmissionNeedingPamphletValidator.SubmissionNeedingPamphletValidator.SubmissionNeedingPamphletValidator;
+  using SubmissionTable.ViewModels.Submission.NeedingPamphlet.Validators.SubmissionNeedingPamphletValidator.SubmissionNeedingPamphletValidator.SubmissionNeedingPamphletValidator;
+  using SubmissionTable.ViewModels.Submission.NeedingPamphlet.Validators.SubmissionNeedingPamphletValidator.SubmissionNeedingPamphletValidator.SubmissionNeedingPamphletValidator;
+  using SubmissionTable.ViewModels.Submission.NeedingPamphlet.Validators.SubmissionNeedingPamphletValidator.SubmissionNeedingPamphletValidator.SubmissionNeedingPamphletValidator;
+  using SubmissionTable.ViewModels.Submission.NeedingPamphlet.Validators.SubmissionNeedingPamphletValidator.SubmissionNeedingPamphletValidator.SubmissionNeedingPamphletValidator;
+  using SubmissionTable.ViewModels.Submission.NeedingPamphlet.Validators.SubmissionNeedingPamphletValidator.SubmissionNeedingPamphletValidator.SubmissionNeedingPamphletValidator;
+  using SubmissionTable.ViewModels.Submission.NeedingPamphlet.Validators.SubmissionNeedingPamphletValidator.SubmissionNeedingPamphletValidator.SubmissionNeedingPamphletValidator;
+  using SubmissionTable.ViewModels.Submission.NeedingPamphlet.Validators.SubmissionNeedingPamphletValidator.SubmissionNeedingPamphletValidator.SubmissionNeedingPamphletValidator;
+  using SubmissionTable.ViewModels.Submission.NeedingPamphlet.Validators.SubmissionNeedingPamphletValidator.SubmissionNeedingPamphletValidator.SubmissionNeedingPamphletValidator;
+  using SubmissionTable.ViewModels.Submission.NeedingPamphlet.Validators.SubmissionNeedingPamphletValidator.SubmissionNeedingPamphletValidator.SubmissionNeedingPamphletValidator;
+  using SubmissionTable.ViewModels.Submission.NeedingPamphlet.Validators.SubmissionNeedingPamphletValidator.SubmissionNeedingPamphletValidator.SubmissionNeedingPamphletValidator;
+  using SubmissionTable.ViewModels.Submission.NeedingPamphlet.Validators.SubmissionNeedingPamphletValidator.SubmissionNeedingPamphletValidator.SubmissionNeedingPamphletValidator;
+  using SubmissionTable.ViewModels.Submission.NeedingPamphlet.Validators.SubmissionNeedingPamphletValidator.SubmissionNeedingPamphletValidator.SubmissionNeedingPamphletValidator;
+  using SubmissionTable.ViewModels.Submission.NeedingPamphlet.Validators.SubmissionNeedingPamphletValidator.SubmissionNeedingPamphletValidator.SubmissionNeedingPamphletValidator;
+  using SubmissionTable.ViewModels.Submission.NeedingPamphlet.Validators.SubmissionNeedingP

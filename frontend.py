@@ -4,7 +4,7 @@ import re
 from gradio_client import Client
 
 
-mpt_endpoint = "https://e57b4b167f9de42da1.gradio.live"
+mpt_endpoint = "https://aab0b8cadd9cd2357e.gradio.live"
 
 # This function checks if the content is a valid C# method
 def is_valid_csharp_method(content):
@@ -14,21 +14,20 @@ def is_valid_csharp_method(content):
 # Modularized function to interact with an API (in this case, ChatGPT)
 def send_to_api(content, endpoint, test_framework):
     if endpoint == "gpt-3.5-turbo":
-        prompt = f"Please provide very comprehensive {test_framework} unit tests for the following C# method to maximize code coverage. Only return the code, no additional explanations:\n{content}"
+        prompt = f"Please provide very comprehensive set of {test_framework} unit tests for the following C# method to maximize code coverage and test important functionalities of the method. Only return the code, no additional explanations:\n{content}"
         response = openai.ChatCompletion.create(
             model="gpt-3.5-turbo",
             messages=[{"role": "user", "content": prompt}],
             temperature=0.7,
             max_tokens=3000
         )
-        return response['choices'][0]['message']['content']
+        result = response['choices'][0]['message']['content']
     elif endpoint == "mosaicml/mpt-7b-instruct":
-        prompt = f"Please provide very comprehensive {test_framework} unit tests for the following C# method to maximize code coverage. Only return the code, no additional explanations:\n{content}"
-        
+        prompt = f"Please provide very comprehensive set of {test_framework} unit tests for the following C# method to maximize code coverage and test important functionalities of the method. Only return the code, no additional explanations:\n{content}"
         client = Client(mpt_endpoint)
-        params = '{"max_new_tokens": 100, "temperature": 0.05}'  # Use a single dictionary
-        response = client.predict(prompt, params, api_name="/greet")
-        return response
+        params = '{"max_new_tokens": 1200, "temperature": 0.3}'  # Use a single dictionary
+        result = client.predict(prompt, params, api_name="/greet")
+    return result
         
         
 def explain_code(content, endpoint):
@@ -41,51 +40,70 @@ def explain_code(content, endpoint):
             temperature=0.7,
             max_tokens=1000
         )
-        return response['choices'][0]['message']['content']
+        result = response['choices'][0]['message']['content']
     elif endpoint == "mosaicml/mpt-7b-instruct":
         client = Client(mpt_endpoint)
-        params = '{"max_new_tokens": 100, "temperature": 0.05}'
-        response = client.predict(prompt, params, api_name="/greet")
-        return response
+        params = '{"max_new_tokens": 1200, "temperature": 0.3}'
+        result = client.predict(prompt, params, api_name="/greet")
+    return result
         
 
-def critique_input_method(content):
-    prompt = f"Please critique the following C# method and provide suggestions for improvement:\n\n{content}. Response should only contain the critique and suggestions."
-    response = openai.ChatCompletion.create(
-        model="gpt-3.5-turbo",
-        messages=[
-            {"role": "user", "content": prompt},
-            {"role": "system", "content": prompt}
-        ],
-        temperature=0.7,
-        max_tokens=500
-    )
-    return response['choices'][0]['message']['content']
+def critique_input_method(content, endpoint):
+    prompt = f"Please critique the following C# method and provide suggestions for improvement:\n\n{content}. Response should only contain the critique and suggestions. Do not return the code."
+    if endpoint == "gpt-3.5-turbo": 
+        response = openai.ChatCompletion.create(
+            model="gpt-3.5-turbo",
+            messages=[
+                {"role": "user", "content": prompt},
+                {"role": "system", "content": prompt}
+            ],
+            temperature=0.7,
+            max_tokens=500
+        )
+        result = response['choices'][0]['message']['content']
+    elif endpoint == "mosaicml/mpt-7b-instruct":
+        client = Client(mpt_endpoint)
+        params = '{"max_new_tokens": 1200, "temperature": 0.3}'
+        result = client.predict(prompt, params, api_name="/greet")
+    return result
     
-def translate_code(content, target_language):
+def translate_code(content, endpoint, target_language):
     """Function to translate code to another language using LLM."""
-    prompt = f"Translate the following C# code to {target_language}:\n\n{content}"
-    response = openai.ChatCompletion.create(
-        model="gpt-3.5-turbo",
-        messages=[
-            {"role": "user", "content": prompt},
-            {"role": "system", "content": prompt}
-        ],
-        temperature=0.7,
-        max_tokens=500
-    )
-    return response['choices'][0]['message']['content']
+    prompt = f"Translate the following C# code to {target_language}:\n\n{content}. Only return the code, no additional explanations."
+    if endpoint == "gpt-3.5-turbo": 
+        response = openai.ChatCompletion.create(
+            model="gpt-3.5-turbo",
+            messages=[
+                {"role": "user", "content": prompt},
+                {"role": "system", "content": prompt}
+            ],
+            temperature=0.7,
+            max_tokens=500
+        )
+        result = response['choices'][0]['message']['content']
+    elif endpoint == "mosaicml/mpt-7b-instruct":
+        client = Client(mpt_endpoint)
+        params = '{"max_new_tokens": 1200, "temperature": 0.3}'
+        result = client.predict(prompt, params, api_name="/greet")
+    return result
     
-def chat_with_code(content, user_query):
+    
+def chat_with_code(content, endpoint, user_query):
     """Function to chat with the code using LLM."""
     prompt = f"Code:\n{content}\n\nUser: {user_query}\nCode: "
-    response = openai.ChatCompletion.create(
-        model="gpt-3.5-turbo",
-        messages=[{"role": "user", "content": prompt}],
-        temperature=0.7,
-        max_tokens=1000
-    )
-    return response['choices'][0]['message']['content']
+    if endpoint == "gpt-3.5-turbo": 
+        response = openai.ChatCompletion.create(
+            model="gpt-3.5-turbo",
+            messages=[{"role": "user", "content": prompt}],
+            temperature=0.7,
+            max_tokens=1000
+        )
+        result = response['choices'][0]['message']['content']
+    elif endpoint == "mosaicml/mpt-7b-instruct":
+        client = Client(mpt_endpoint)
+        params = '{"max_new_tokens": 1200, "temperature": 0.3}'
+        result = client.predict(prompt, params, api_name="/greet")
+    return result
 
 
 def main():
@@ -134,9 +152,9 @@ def main():
                         f.write(st.session_state.unit_tests)
 
             with btn_col2:
-                if st.button("Critique Input Method"):
+                if st.button("Critique Input"):
                     with st.spinner('Critiquing Method...'):
-                        st.session_state.critique = critique_input_method(content)
+                        st.session_state.critique = critique_input_method(content, api_endpoint)
 
             with btn_col3:
                 if st.button("Explain the Code"):
@@ -146,7 +164,7 @@ def main():
             with btn_col4:
                 if st.button("Translate Code"):
                     with st.spinner('Translating the Code...'):
-                        st.session_state.translated_code = translate_code(content, target_language)
+                        st.session_state.translated_code = translate_code(content, api_endpoint, target_language)
 
             # Display results
             if "unit_tests" in st.session_state:
@@ -179,7 +197,7 @@ def main():
             if user_query and not "last_query" in st.session_state:
                 st.session_state.last_query = user_query
                 with st.spinner("Waiting for response..."):
-                    response = chat_with_code(content, user_query)
+                    response = chat_with_code(content, api_endpoint, user_query)
                     st.session_state.chat_response = response
                 st.code(st.session_state.chat_response, language='csharp')
             elif "last_query" in st.session_state and st.session_state.last_query != user_query:
