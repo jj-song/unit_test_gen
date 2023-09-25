@@ -14,7 +14,8 @@ def is_valid_csharp_method(content):
 # Modularized function to interact with an API (in this case, ChatGPT)
 def send_to_api(content, endpoint, test_framework):
     if endpoint == "gpt-3.5-turbo":
-        prompt = f"Please provide very comprehensive set of {test_framework} unit tests for the following C# method to maximize code coverage and test important functionalities of the method. Only return the code, no additional explanations:\n{content}"
+        #prompt = f"Please provide very comprehensive set of {test_framework} unit tests for the following C# method to maximize code coverage and test important functionalities of the method. Only return the code, no additional explanations:\n{content}"
+        prompt = f"Please provide a very comprehensive set of {test_framework} unit tests for the following C# method to maximize code coverage and test important functionalities of the method. Only return the unit-test code, no additional explanations:\n{content}"
         response = openai.ChatCompletion.create(
             model="gpt-3.5-turbo",
             messages=[{"role": "user", "content": prompt}],
@@ -23,9 +24,11 @@ def send_to_api(content, endpoint, test_framework):
         )
         result = response['choices'][0]['message']['content']
     elif endpoint == "mosaicml/mpt-7b-instruct":
-        prompt = f"Please provide very comprehensive set of {test_framework} unit tests for the following C# method to maximize code coverage and test important functionalities of the method. Only return the code, no additional explanations:\n{content}"
+        #prompt = f"Please provide very comprehensive set of {test_framework} unit tests for the following C# method to maximize code coverage and test important functionalities of the method. Only return the code, no additional explanations:\n{content}"
+        prompt = f"Please provide a very comprehensive set of {test_framework} unit tests for the following C# method to maximize code coverage and test important functionalities of the method. Only return the unit-test code, no additional explanations:\n{content}"
         client = Client(mpt_endpoint)
-        params = '{"max_new_tokens": 1200, "temperature": 0.3}'  # Use a single dictionary
+        #params = '{"max_new_tokens": 1200, "temperature": 0.3}'  # Use a single dictionary
+        params = '{"max_new_tokens": 1200, "temperature": 0.40}' #, "do_sample": true, "top_p": 0.75, "top_k": 50}'  # Use a single dictionary
         result = client.predict(prompt, params, api_name="/greet")
     return result
         
@@ -43,7 +46,7 @@ def explain_code(content, endpoint):
         result = response['choices'][0]['message']['content']
     elif endpoint == "mosaicml/mpt-7b-instruct":
         client = Client(mpt_endpoint)
-        params = '{"max_new_tokens": 1200, "temperature": 0.3}'
+        params = '{"max_new_tokens": 1200, "temperature": 0.4}'
         result = client.predict(prompt, params, api_name="/greet")
     return result
         
@@ -63,7 +66,7 @@ def critique_input_method(content, endpoint):
         result = response['choices'][0]['message']['content']
     elif endpoint == "mosaicml/mpt-7b-instruct":
         client = Client(mpt_endpoint)
-        params = '{"max_new_tokens": 1200, "temperature": 0.3}'
+        params = '{"max_new_tokens": 1200, "temperature": 0.4}'
         result = client.predict(prompt, params, api_name="/greet")
     return result
     
@@ -83,7 +86,7 @@ def translate_code(content, endpoint, target_language):
         result = response['choices'][0]['message']['content']
     elif endpoint == "mosaicml/mpt-7b-instruct":
         client = Client(mpt_endpoint)
-        params = '{"max_new_tokens": 1200, "temperature": 0.3}'
+        params = '{"max_new_tokens": 1200, "temperature": 0.4}'
         result = client.predict(prompt, params, api_name="/greet")
     return result
     
@@ -101,7 +104,7 @@ def chat_with_code(content, endpoint, user_query):
         result = response['choices'][0]['message']['content']
     elif endpoint == "mosaicml/mpt-7b-instruct":
         client = Client(mpt_endpoint)
-        params = '{"max_new_tokens": 1200, "temperature": 0.3}'
+        params = '{"max_new_tokens": 1200, "temperature": 0.4}'
         result = client.predict(prompt, params, api_name="/greet")
     return result
 
