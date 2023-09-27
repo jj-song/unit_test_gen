@@ -160,12 +160,12 @@ def main():
                         st.session_state.explanation = explain_code(content, api_endpoint)
 
             with btn_col3:
-                if st.button("Critique the Code"):
-                    with st.spinner('Critiquing the Code...'):
+                if st.button("Review the Code"):
+                    with st.spinner('Reviewing the Code...'):
                         st.session_state.critique = critique_input_method(content, api_endpoint)
 
             with btn_col4:
-                if st.button("Translate Code"):
+                if st.button("Translate the Code"):
                     with st.spinner('Translating the Code...'):
                         st.session_state.translated_code = translate_code(content, api_endpoint, target_language)
 
@@ -179,8 +179,8 @@ def main():
 
             if "critique" in st.session_state:
                 st.markdown("---")
-                st.subheader("Critique of Input Method")
-                st.text_area("Critique", st.session_state.critique, height=150)
+                st.subheader("Review of Input Method")
+                st.text_area("Review", st.session_state.critique, height=150)
 
             if "explanation" in st.session_state:
                 st.markdown("---")
@@ -202,7 +202,7 @@ def main():
                 with st.spinner("Waiting for response..."):
                     response = chat_with_code(content, api_endpoint, user_query)
                     st.session_state.chat_response = response
-                st.code(st.session_state.chat_response, language='csharp')
+                st.text(st.session_state.chat_response)
             elif "last_query" in st.session_state and st.session_state.last_query != user_query:
                 # Reset last_query to allow new queries
                 del st.session_state.last_query
