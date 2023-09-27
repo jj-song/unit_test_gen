@@ -4,7 +4,7 @@ import re
 from gradio_client import Client
 
 
-mpt_endpoint = "https://e0289944f450dc6b40.gradio.live"
+mpt_endpoint = "https://28a2b5769c540808d3.gradio.live"
 
 # This function checks if the content is a valid C# method
 def is_valid_csharp_method(content):
@@ -117,7 +117,7 @@ def main():
     with col2:
         st.image("imgs/tioca_chal_coin.png", width=300)  # Adjust width as needed
 
-    st.title("Unit Test Generation Tool")
+    st.title("TIOCA Code Generation Tool")
     # Organize "Select API Endpoint", "Select Test Framework", and "Select Target Language" in the same row
     col1, col2, col3 = st.columns(3)
     with col1:
@@ -155,14 +155,14 @@ def main():
                         f.write(st.session_state.unit_tests)
 
             with btn_col2:
-                if st.button("Critique the Code"):
-                    with st.spinner('Critiquing Method...'):
-                        st.session_state.critique = critique_input_method(content, api_endpoint)
-
-            with btn_col3:
                 if st.button("Explain the Code"):
                     with st.spinner('Explaining the Code...'):
                         st.session_state.explanation = explain_code(content, api_endpoint)
+
+            with btn_col3:
+                if st.button("Critique the Code"):
+                    with st.spinner('Critiquing the Code...'):
+                        st.session_state.critique = critique_input_method(content, api_endpoint)
 
             with btn_col4:
                 if st.button("Translate Code"):
